@@ -6,5 +6,10 @@
 // console.log("platform:", os.platform());
 // console.log("Arch:", os.arch());
 
-const talk=require("./greet")
-console.log(talk("Besu"))
+// const talk=require("./greet")
+// console.log(talk("Besu"))
+
+const file = require("fs");
+file.writeFileSync("student.txt", "student will register here! ");
+
+console.log(file.readFileSync("student.txt",'utf-8'));
